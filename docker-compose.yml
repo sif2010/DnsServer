@@ -36,3 +36,6 @@ environment:
 volumes:
 - config:/etc/dns
 restart: unless
+
+volumes:
+  data:
