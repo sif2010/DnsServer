@@ -4,6 +4,10 @@ services:
     image: nginx:latest
     ports:
       - "80:80"
+  ingress:
+    image: technitium/dns-server:latest
+    ports:
+      - "8080:8080"
 dns-server:
 container_name: dns-server
 hostname: dns-server
